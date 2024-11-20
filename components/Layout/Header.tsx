@@ -1,11 +1,14 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <header className="text-gray-600 body-font">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <Link href="/" className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <Link
+          href="/"
+          className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
           <svg
             className="w-10 h-10 text-white p-2 bg-blue-500 rounded-full"
             fill="none"
@@ -21,6 +24,9 @@ const Header = () => {
             ></path>
           </svg>
         </Link>
+        <div className="text-black font-medium text-lg ml-3">
+          GraphQl Example in Next Js
+        </div>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
           {/* {user ? (
             <div className="flex items-center space-x-5">
